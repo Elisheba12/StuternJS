@@ -22,6 +22,10 @@ Examples of non-mutating array methods:
 
 */
 
+
+
+
+
 /**
  * Question 2
  * Here is an array of languages: [‘C#’, ‘JavaScript’, ‘Ruby’, ‘PHP’, ‘Python’]. Perform this operation on them
@@ -54,6 +58,9 @@ languages.splice(5, 1, "Go", "Rust");
 console.log(languages);
 
 
+
+
+
 /**
  * Question 3
  * What will be the value of fruit after calling the function changeFruit?
@@ -78,6 +85,8 @@ changeFruit(fruit);
 
 
 
+
+
 /**
  * Question 4
  * Write a function that accepts an array of numbers as an argument. Return the maximum value in the array.
@@ -93,8 +102,10 @@ function max(arrValues) {
     };
     return (maximum);
 };
-
 max([4, 5, 10, -2]);
+
+
+
 
 
 /**
@@ -104,7 +115,7 @@ max([4, 5, 10, -2]);
 
 function valTimesIndex(arrNumbers) {
     let newArrNum = [];
-    for (let i = 0; i < arrNumbers.length; i++) {
+    for (i in arrNumbers) {
         newArrNum.push(arrNumbers[i] * i);
     };
     return newArrNum;
@@ -112,4 +123,3 @@ function valTimesIndex(arrNumbers) {
 
 valTimesIndex([1, 2, 3]);
 valTimesIndex([5, 10, 15]);
-
