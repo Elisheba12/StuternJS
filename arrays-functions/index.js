@@ -97,10 +97,11 @@ e.g.,max([4, 5, 10, -2])
 function max(arrValues) {
     let maximum = -Infinity;
     for (numbers of arrValues) {
-        if (numbers > maximum)
+        if (numbers > maximum) {
             maximum = numbers;
+        };
     };
-    return (maximum);
+    return maximum;
 };
 max([4, 5, 10, -2]);
 
